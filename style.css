@@ -1,0 +1,344 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', 'Roboto', sans-serif;
+}
+
+nav {
+    background: #000;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+
+nav .logo {
+    font-size: 24px;
+    color: white;
+}
+
+.nav-links a {
+    color: #fff;
+    margin: 0 20px;
+    text-decoration: none;
+    font-weight: 500;
+}
+.nav-links2 a {
+    color: #fff;
+    margin: 0 20px;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.nav-links2 {
+    flex-grow: 2; /* Gives more growth ability to center the links effectively */
+    display: flex;
+    justify-content: center; /* This centers the nav links horizontally */
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.search-input {
+    width: 300px; /* or any specific pixel value like 300px */
+}
+
+
+.input-container {
+    position: relative;
+    display: flex;
+    flex-grow: 1;
+    align-items: center;
+    background-color: white;
+    border-radius: 5px;
+    overflow: hidden;
+    border: none;
+}
+
+.input-container input[type="text"] {
+    flex-grow: 1;
+    border: none;
+    padding: 10px;
+    font-size: 18px;
+    border-radius: 5px 0 0 5px;
+}
+
+.input-container button {
+    padding: 15px 15px;
+    border: none;
+    background-color: #007BFF;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: 10px; /* Change this value as needed */
+}
+
+.input-container button:hover {
+    background-color: #0056b3;
+}
+
+/* Ensuring that the input and button text are vertically centered */
+.input-container input, .input-container button {
+    height: 25px;
+    line-height: 20px;
+}
+
+.search-bar input[type="text"], .search-bar button {
+    padding: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+    font-size: 10px;
+}
+
+.hero {
+    margin-top: 0px;
+    position: relative;
+    text-align: left;
+}
+
+.background-image {
+    width: 100%;
+    height: auto;
+}
+
+.hero-content {
+    margin-top: 90px;
+    margin-left: 20px;
+    padding-left: 20px;
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 8px;
+    width: 30%;
+}
+
+.hero h1 {
+    font-size: 46px;
+    margin: 0;
+    font-weight: bolder;
+}
+
+.hero p {
+    font-size: 16px;
+    font-weight: 300;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.hero .contact {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 10%;
+    box-sizing: border-box;
+}
+
+.hero .contact h1 {
+    color: white;
+    font-size: 3.5rem; /* Adjusted for better visual impact */
+}
+
+.hero .contact-form {
+    width: 30%; /* Adjust width as needed for your layout */
+    background: rgba(255, 255, 255, 0.3); /* Semi-transparent background */
+    padding: 20px;
+    border-radius: 10px;
+    margin-left: 0px;
+    margin-right: 30%;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form input,
+.contact-form textarea {
+    color:#fff;
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.6); /* Slightly less transparent for readability */
+}
+
+.contact-form button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contact-form button:hover {
+    background-color: #0056b3;
+}
+
+
+button {
+    border-radius: 5px;
+    font-weight: bold;
+    text-transform: uppercase;
+    background-color: blue;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: darkblue;
+}
+.social-media-icons {
+    position: fixed;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    /*background-color: rgba(0, 0, 0, 0.5); /* Optional: Adds a subtle background for visibility */
+    padding: 10px;
+    border-radius: 0 5px 5px 0;
+    margin-left:10px;
+    margin-top: 90px;
+}
+
+.social-media-icons a {
+    color: white;
+    display: block; /* Makes each link take full width of the container */
+    margin: 5px 0;
+    font-size: 24px; /* Adjust size as needed */
+    transition: color 0.3s ease;
+}
+
+.social-media-icons a:hover {
+    color: #007BFF; /* Change hover color if needed */
+}
+
+.about {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    text-align: left;
+    /*background: rgba(0, 0, 0, 0.5); /* Optional: Adds a background for better readability */
+    color: white;
+    padding: 20px 0;
+    margin-left: 300px;
+    margin-top: 50px;
+}
+
+.abouttext{
+    width: 60%;
+    background: rgba(0, 0, 0, 0.5); /* Optional: Adds a background for better readability */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.contact {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    text-align: left;
+    /*background: rgba(0, 0, 0, 0.5); /* Optional: Adds a background for better readability */
+    color: white;
+    padding: 20px 0;
+    margin-left: 300px;
+    margin-top: 330px;
+}
+
+.contact h1 {
+    font-size:400%
+}
+
+
+.our-team {
+    text-align: center;
+    background-color: #f4f4f4;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.team-members {
+    display: flex;
+    /*justify-content: center;*/
+    gap: 20px;
+    padding: 20px;
+}
+
+.team-member {
+    background: rgba(0, 0, 0, 0.5); /* Optional: Adds a background for better readability */
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    padding: 10px;
+    width: 300px;
+}
+
+.team-member img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+}
+
+.team-member h3 {
+    margin-top: 10px;
+    color: #ffffff;
+}
+
+.team-member p {
+    color: #ffffff;
+    font-size: 14px;
+}
+
+#role{
+    text-align: center;
+    background: rgba(1, 2, 61, 0.9); /* Optional: Adds a background for better readability */
+}
+
+/*----------- logic for the results--------------*/
+#results {
+    position: absolute;
+    top: 60px; /* Adjust according to the height of your nav bar */
+    right: 20px;
+    z-index: 1000;
+    width: 400px; /* Set a fixed width */
+    background-color: rgba(255, 255, 255, 0.5);
+    box-shadow: 0 4px 8px rgba(5, 5, 5, 0.2);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.result-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+.result-item:last-child {
+    border-bottom: none;
+}
+
+.result-item img {
+    width: 110%; /* Ensures all images are the same size */
+    height: auto;
+    border-radius: 5px;
+}
+
+.result-item div {
+    text-align:left;
+    padding: 5px;
+}
+
+
